@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/logoPic"
+        android:background="@drawable/heart_smart_logo"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/logoPic"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <EditText
+            android:id="@+id/questionTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/exampleQuestion1"
+            android:textColorHint="#a6a6a6"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logoPic"
+            android:layout_marginTop="5dp"
+            android:focusableInTouchMode="true"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:textStyle="bold"
+        android:text="@string/askButton"
+        />
+
+
+</RelativeLayout>

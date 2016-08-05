@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:background="#ffff"
+    android:padding="5dp"
+    android:id="@+id/list">
+
+
+    <TextView
+        android:id="@+id/answerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watson Response Title"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/confidenceScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#FF3030"
+        android:text="99%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/confidenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FF3030"
+        android:textSize="20dp"
+        android:text="Confidence: "
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/confidenceScore"
+        android:paddingRight="10dp"/>
+
+
+</RelativeLayout>
